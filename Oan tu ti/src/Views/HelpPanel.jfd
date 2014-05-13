@@ -1,0 +1,48 @@
+JFDML JFormDesigner: "5.1.2.0.134" Java: "1.7.0_51" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:105:p, comp button2:::p:71:p, space :p:27:p, comp button3:::p::p, space :p:37:p, comp button4:::p:67:p, space :0:99:x}, seq t {space ::81:x, comp scrollPane1:::p:314:p, space :p:80:p}, seq {par l {seq {space :::p, comp button1:::p::p}, seq l {space :p:165:p, comp label1:::p::p}}, space ::184:x}}"
+			"$verticalGroup": "par l {seq l {space ::23:x, comp label1:::p::p, space :::p, comp scrollPane1:::p:205:p, space :p:43:p, par b {comp button3::b:p:38:p, comp button4::b:p:38:p, comp button2::b:p:38:p}, space :p:11:p, comp button1:::p::p, space :::p}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Back "
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button2"
+				"text": "Result"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button2ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button3"
+				"text": "Rounds"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button3ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button4"
+				"text": "Guide"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button4ActionPerformed", true ) )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Display Help"
+				"font": new java.awt.Font( "Tahoma", 1, 20 )
+				"foreground": sfield java.awt.Color orange
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 475, 385 )
+		} )
+	}
+}
